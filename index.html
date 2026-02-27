@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeClock Enterprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body { background: #030712; color: #c9e4f8; font-family: 'Barlow Condensed', sans-serif; }
+      ::-webkit-scrollbar { width: 4px; height: 4px; }
+      ::-webkit-scrollbar-track { background: #030712; }
+      ::-webkit-scrollbar-thumb { background: #0d2847; border-radius: 2px; }
+      input, select, textarea { font-family: 'JetBrains Mono', monospace !important; color-scheme: dark; }
+      @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes ping { 0%, 100% { transform: scale(1); opacity: .7; } 50% { transform: scale(1.6); opacity: 0; } }
+      @keyframes scanline { 0% { transform: translateY(-100%); } 100% { transform: translateY(100vh); } }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
